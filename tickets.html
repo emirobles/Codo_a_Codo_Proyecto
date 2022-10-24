@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>Tickets</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="Nav-bar">
+            <div class="container-fluid">
+                <a href="./index.html">
+                    <img src="img/codoacodo.png" alt="Codo_a_Codo" width="30" height="24"
+                        class="d-inline-block align-text-top" id="logo">
+                </a>
+                <a class="navbar-brand" href="./index.html">Conf Bs As</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="opciones">
+                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="#">Conviertete en orador</a>
+                        <a class="nav-link" href="#" id="tickets">Comprar tickets</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--NAVBAR-->
+    
+    <div class="container-fluid">
+        <div class="title-buy">
+            <h3>SECCIÓN DE COMPRA DE TICKETS</h1>
+                <p>Escoge según tu categoría</p>
+        </div>
+        <div id="contenedor-cards2">
+            <div class="col">
+                <div class="card contenedor-padre" id="card-contenedor-descuento-1">                    
+                    <div class="card-body" id="card-descuento">                        
+                        <h4 class="card-title marg">Estudiante</h4>
+                        <h5 class="card-text destacado">Tiene un descuento</h5>
+                        <h6 class="card-text descuento-promo">80%</h6>
+                        <p class="card-text observacion">* Presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card contenedor-padre" id="card-contenedor-descuento-2">
+                    <div class="card-body" id="card-descuento">
+                        <h4 class="card-title marg">Trainee</h4>
+                        <h5 class="card-text destacado">Tiene un descuento</h5>
+                        <h6 class="card-text descuento-promo">50%</h6>
+                        <p class="card-text observacion">* Presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card contenedor-padre" id="card-contenedor-descuento-3">
+                    <div class="card-body" id="card-descuento">
+                        <h4 class="card-title marg">Junior</h4>
+                        <h5 class="card-text destacado">Tiene un descuento</h5>
+                        <h6 class="card-text descuento-promo">15%</h6>
+                        <p class="card-text observacion">* Presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cards -->
+    <div>        
+        <!-- Formulario contacto-->
+        <div>
+            <div class="titulos">
+                <h1>VENTA</h1>
+                <h2>VALOR DEL TICKET $200</h2>                
+            </div>
+            <section>
+                <div class="container_form-ticket">
+        
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="name" class="form-control" id="inputNom" placeholder="Nombre">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="lastname" class="form-control" id="inputApellido" placeholder="Apellido">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="inputCorreo" placeholder="Correo">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Cantidad</label>
+                            <input type="number" class="form-control" id="inputCantidad" placeholder="Cantidad">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Categoría</label>
+                            <input type="category" class="form-control" id="Categoria" placeholder="Categoria">
+                        </div>
+
+                        <select class="form-select col-md-6">
+                            <option selected>Categoria</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                        </select>
+                        <div class="col-md-12">
+                            <input type="total" class="form-control" id="total" placeholder="Total a pagar: $">
+                        </div>
+                        <div class="col-md-6">
+                            <button type="submit" class="btn delete">Borrar</button>                            
+                        </div>
+                        <div class="col-md-6">                            
+                            <button type="submit" class="btn resume">Resumen</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="navbar" id="footer">
+        <div class="container-fluid">
+            <a class="nav-link" href="#">Preguntas<br /> frecuentes</a>
+            <a class="nav-link" href="#">Contactanos</a>
+            <a class="nav-link" href="#">Prensa</a>
+            <a class="nav-link" href="#">Conferencia</a>
+            <a class="nav-link" href="#">Términos y<br /> condiciones</a>
+            <a class="nav-link" href="#">Privacidad</a>
+            <a class="nav-link" href="#">Estudiantes</a>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Copyright -->
+    <div class="text-center p-3" id="copyr">
+        © 2020 Copyright:
+        <a href="https://github.com/emirobles">Emilce Robles</a>
+    </div>
+
+</body>
+</html>
